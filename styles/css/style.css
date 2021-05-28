@@ -31,16 +31,26 @@ img.logo {
 .dropdownMenu {
 	color: black;
   
-  }
+}
   
-	a:visited {
-    color:#664fc2;
-	}
+a:visited {
+  color:#664fc2;
+}
 
-	a.nav-bar:visited {
-		color: #1a1a1a;
-	}
+a.nav-bar:visited {
+	color: #1a1a1a;
+}
 
+#login-logo {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  justify-content: center;
+}
   .form-style-5{
 	  max-width: 500px;
 	  padding: 10px 20px;
@@ -164,5 +174,5 @@ img.logo {
 }
 
 #login-form {
-	padding-top: 200px;
+	padding-top: 60px;
 }
