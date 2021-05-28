@@ -13,64 +13,103 @@
     <link href="../styles/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Aplicación para la gestión del tiempo de estudio</title>
+
+    <header>
+      <div id="banner">
+        <!--<a href="index.html"><img class="logo" src="../models/image/logo.png"></a>-->
+        </div>
+      <nav>
+        <div class="nav-wrapper">
+          <ul class="left hide-on-med-and-down">
+            <li><a class="nav-bar" href="index.html"><strong>Inicio</strong></a></li>
+            <li><a class="nav-bar" href="introduccion.html"><strong>Nuestro proyecto</strong></a></li>
+            <li><a class="nav-bar" href="componentes.html"><strong>Componentes</strong></a></li>
+            <li><a class="nav-bar" href=""><strong>Accesibilidad</strong></a></li>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="nav-bar" href="login.html"><strong>Iniciar sesión</strong></a></li>
+            <li class="active"><a class="nav-bar" href="register.html"><strong>Regístrate</strong></a></li>
+          </ul>
+        </div>
+         <!-- <ul class="breadcrumb">
+            <li><a href="index.html">Inicio</a></li>
+          </ul>-->
+        </div>
+      </nav>
+    </header>
+
     <div class="form-style-5">
         <form>
         <fieldset>
         <legend><span class="number">1</span> Registro de usuario</legend>
-        <input type="text" name="field1" placeholder="Your Name *">
-        <input type="email" name="field2" placeholder="Your Email *">
-        <textarea name="field3" placeholder="About yourself"></textarea>
-        <label for="job">Interests:</label>
-        <select id="job" name="field4">
-        <optgroup label="Indoors">
-          <option value="fishkeeping">Fishkeeping</option>
-          <option value="reading">Reading</option>
-          <option value="boxing">Boxing</option>
-          <option value="debate">Debate</option>
-          <option value="gaming">Gaming</option>
-          <option value="snooker">Snooker</option>
-          <option value="other_indoor">Other</option>
-        </optgroup>
-        <optgroup label="Outdoors">
-          <option value="football">Football</option>
-          <option value="swimming">Swimming</option>
-          <option value="fishing">Fishing</option>
-          <option value="climbing">Climbing</option>
-          <option value="cycling">Cycling</option>
-          <option value="other_outdoor">Other</option>
-        </optgroup>
-        </select>      
-        </fieldset>
-        <fieldset>
+        <input type="text" name="field1" placeholder="Nombre *">
+        <input type="text" name="field2" placeholder="Apellidos *">
+        <input type="email" name="field3" placeholder="Email *">
+        <input type="text" name="field4" placeholder="Fecha de nacimiento *">
+        <input type="text" name="field5" placeholder="Nombre de usuario *">
+        <input type="text" name="field6" placeholder="Grado que cursas *">
+        <div class="dropdownMenu">
+          <div class="title dropdownButton">
+            <p>Curso actual:</p>
+          </div>
+          <div class="dropdownContent">
+              <ul>
+                <li><a href="#">1º</a></li>
+                <li><a href="#">2º</a></li>
+                <li><a href="#">3º</a></li>
+                <li><a href="#">4º</a></li>
+                <li><a href="#">Otros</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdownMenu">
+          <div class="title dropdownButton">
+            <p>¿Eres docente?:</p>
+          </div>
+          <div class="dropdownContent">
+              <ul>
+                <li><a href="#">Sí</a></li>
+                <li><a href="#">No</a></li>
+            </ul>
+          </div>
+        </div>
+        <script>
+          $(document).ready(function() {
+
+          //Botón de acción del acordeón
+          $('.dropdownButton').click(function() {
+
+            //Elimina la clase on de todos los botones
+            $('.dropdownButton').removeClass('on');
+
+            //Plegamos todo el contenido que esta abierto
+            $('.dropdownContent').slideUp('slow');
+
+            //Si el siguiente slide no esta abierto lo abrimos
+            if($(this).next().is(':hidden') == true) {
+
+              //Añade la clase on en el botón
+              $(this).addClass('on');
+
+              //Abre el slide
+              $(this).next().slideDown('slow');
+            }
+
+          });
+
+          // Cerramos todo el contenido al cargar la página
+          $('.dropdownContent').hide();
+
+});
+        </script>
         <legend><span class="number">2</span> Información adicional</legend>
         <textarea name="field3" placeholder="Centro de estudio"></textarea>
         </fieldset>
         <input type="submit" value="Registrar" />
         </form>
-        </div>  </head>
-
-<body>
-
-</body>
+        </div>  
+      </head>
 
 </html>
-<!--Nota para jose:
-  - Tienes que añadir el banner. Copialo tal cual de index por ejemplo.
-  - Cambia el color del form tiene que tener el mismo amarillo y el mismo negro que el banner.
-    asegurate de que el codigo de color es el correcto. Para ello sabes que tienes que ir al materialize y buscar la clase correspondiente.
-  - Contenido del form:
-    * Un campo para el nombre.
-    * Un campo para los apellidos.
-    * Un campo para la fecha de nacimiento: Un calendario.
-    * Un campo para el nombre de usuario. Esto es por ejemplo: Joel123, Jose-ull, etc.
-    * Un campo para el correo electronico a registrar.
-    * Un campo para el grado que cursa el usuario
-    * Un campo que seleccione el curso: Desplegable. (opciones primero, segundo, tercero, cuarto, otros);
-    * Un campo que pregunte ¿Eres docente? respuesta desplegable sí o no.
-      // esto es para mas adelante:
-        en caso de que sea docente intentar poner preguntas distintas estas serían:
-          * Asignaturas que imparte separadas por comas (estilo palabras clave de infoJobs).
-      //
-  ->
 
 
