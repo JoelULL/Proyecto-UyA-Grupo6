@@ -1,0 +1,139 @@
+#banner {
+  padding: 7px;
+  display: flex;   
+  height: 200px;
+  background-image: url(../../models/image/banner.png);    
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+html, body {
+    min-height: 100%;
+    }
+    body, div, form, input, select, p { 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    }
+    h1 {
+    color: rgb(207, 204, 204);  
+    margin: 0;
+    font-weight: 400;
+    }
+    h3 {
+    margin: 12px 0;
+    color: #fbc02d;
+    }
+    .main-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+    }
+    form {
+    width: 100%;
+    padding: 20px;
+    }
+    fieldset {
+    border: none;
+    border-top: 1px solid #fbc02d;
+    }
+    .account-details, .personal-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .account-details >div, .personal-details >div >div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+    .account-details >div, .personal-details >div, input, label {
+    width: 100%;
+    }
+    label {
+    color: rgb(207, 204, 204);
+    padding: 0 5px;
+    text-align: right;
+    vertical-align: middle;
+    }
+    input {
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    vertical-align: middle;
+    }
+    .checkbox {
+    color: rgb(207, 204, 204);  
+    margin-bottom: 10px;
+    }
+    select, .children, .gender, .bdate-block {
+    width: calc(100% + 26px);
+    padding: 5px 0;
+    }
+    select {
+    background: #ffffff;
+    }
+    .gender input {
+    width: auto;
+    } 
+    .gender label {
+    padding: 0 5px 0 0;
+    } 
+    .bdate-block {
+    display: flex;
+    justify-content: space-between;
+    }
+    .birthdate select.day {
+    width: 35px;
+    }
+    .birthdate select.mounth {
+    width: calc(100% - 94px);
+    }
+    .birthdate input {
+    width: 38px;
+    vertical-align: unset;
+    }
+    .checkbox input, .children input {
+    width: auto;
+    margin: -2px 10px 0 0;
+    }
+    .checkbox a {
+    color: #fbc02d;
+    }
+    .checkbox a:hover {
+    color: #f8e0a3
+    }
+    button {
+    width: 25%;
+    padding: 10px 0;
+    margin: 10px auto;
+    margin-left: 10px;;
+    border-radius: 5px; 
+    border: none;
+    background: #fbc02d; 
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    }
+    button:hover {
+    background: #fbc02d;
+    }
+    @media (min-width: 568px) {
+    .account-details >div, .personal-details >div {
+    width: 50%;
+    }
+    label {
+    width: 40%;
+    }
+    input {
+    width: 60%;
+    }
+    select, .children, .gender, .bdate-block {
+    width: calc(60% + 16px);
+    }
+    }
+ 

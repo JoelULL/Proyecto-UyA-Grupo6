@@ -3,113 +3,90 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link href="../styles/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <!--Import jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!--Import style.css-->
-    <link href="../styles/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="../styles/css/register-style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Aplicación para la gestión del tiempo de estudio</title>
-
+  </head>
+  <body>
     <header>
       <div id="banner">
         <!--<a href="index.html"><img class="logo" src="../models/image/logo.png"></a>-->
         </div>
-      <nav>
-        <div class="nav-wrapper">
-          <ul class="left hide-on-med-and-down">
-            <li><a class="nav-bar" href="index.html"><strong>Inicio</strong></a></li>
-            <li><a class="nav-bar" href="introduccion.html"><strong>Nuestro proyecto</strong></a></li>
-            <li><a class="nav-bar" href="componentes.html"><strong>Componentes</strong></a></li>
-            <li><a class="nav-bar" href=""><strong>Accesibilidad</strong></a></li>
-          </ul>
-          <ul class="right hide-on-med-and-down">
-            <li><a class="nav-bar" href="login.html"><strong>Iniciar sesión</strong></a></li>
-            <li class="active"><a class="nav-bar" href="register.html"><strong>Regístrate</strong></a></li>
-          </ul>
-        </div>
-         <!-- <ul class="breadcrumb">
-            <li><a href="index.html">Inicio</a></li>
-          </ul>-->
-        </div>
-      </nav>
     </header>
-
-    <div class="form-style-5">
-        <form>
-        <fieldset>
-        <legend><span class="number">1</span> Registro de usuario</legend>
-        <input type="text" name="field1" placeholder="Nombre *">
-        <input type="text" name="field2" placeholder="Apellidos *">
-        <input type="email" name="field3" placeholder="Email *">
-        <input type="text" name="field4" placeholder="Fecha de nacimiento *">
-        <input type="text" name="field5" placeholder="Nombre de usuario *">
-        <input type="text" name="field6" placeholder="Grado que cursas *">
-        <div class="dropdownMenu">
-          <div class="title dropdownButton">
-            <p>Curso actual:</p>
+    <div class="main-block">
+    <form action="/">
+      <h1>Registrate Gratis</h1>
+      <fieldset>
+        <legend>
+          <h3>Detales de Cuenta</h3>
+        </legend>
+        <div  class="account-details">
+          <div><label>Nombre de usuario*</label><input type="text" name="name" required></div>
+          <div><label>Contraseña*</label><input type="password" name="name" required></div>
+          <div><label>Email*</label><input type="text" name="name" required></div>
+          <div><label>Repetir contraseña*</label><input type="password" name="name" required></div>
+          <div><label>Repetir email*</label><input type="text" name="name" required></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3>Detalles Personales</h3>
+        </legend>
+        <div  class="personal-details">
+          <div>
+            <div><label>Nombre*</label><input type="text" name="name" required></div>
+            <div><label>Apellido*</label><input type="text" name="name" required></div>
+            <div><label>Grado que cursas*</label><input type="text" name="name"></div>
+            <div>
+              <label>Curso*</label>  
+              <select>
+                <option value=""></option>
+                <option value="1">1º</option>
+                <option value="2">2º</option>
+                <option value="3">3º</option>
+                <option value="4">4º</option>
+                <option value="Otros">Otros</option>
+              </select>
+            </div>
+            
           </div>
-          <div class="dropdownContent">
-              <ul>
-                <li><a href="#">1º</a></li>
-                <li><a href="#">2º</a></li>
-                <li><a href="#">3º</a></li>
-                <li><a href="#">4º</a></li>
-                <li><a href="#">Otros</a></li>
-            </ul>
+          <div>
+            <div>
+              <label>Género*</label>
+              <div class="gender">
+                <input type="radio" value="none" id="masculino" name="gender" required/>
+                <label for="masculino" class="radio">Masculino</label>
+                <input type="radio" value="none" id="femenino" name="gender" required/>
+                <label for="femenino" class="radio">Femenino</label>
+                <input type="radio" value="none" id="No especifica" name="other" required/>
+                <label for="No especifica" class="radio">No especifica</label>
+              </div>
+            </div>
+            <div><label>Fecha de nacimiento*</label><input type="date" name="date" required></div>
+            <div><label>País de origen*</label><input type="text" name="country" required></div>
+            <div>
+              <label>¿Eres Docente?*</label>
+              <div class="children"><input type="checkbox" name="name" required></div>
+            </div>
           </div>
         </div>
-        <div class="dropdownMenu">
-          <div class="title dropdownButton">
-            <p>¿Eres docente?:</p>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3>Términos y Condiciones</h3>
+        </legend>
+        <div  class="terms-mailing">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox"><span>Acepto <a href="https://www.w3docs.com/privacy-policy">la política de privacidad de Esit-app.</a></span>
           </div>
-          <div class="dropdownContent">
-              <ul>
-                <li><a href="#">Sí</a></li>
-                <li><a href="#">No</a></li>
-            </ul>
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox"><span>Quiero recibir notificaciones personalizadas</span>
           </div>
-        </div>
-        <script>
-          $(document).ready(function() {
-
-          //Botón de acción del acordeón
-          $('.dropdownButton').click(function() {
-
-            //Elimina la clase on de todos los botones
-            $('.dropdownButton').removeClass('on');
-
-            //Plegamos todo el contenido que esta abierto
-            $('.dropdownContent').slideUp('slow');
-
-            //Si el siguiente slide no esta abierto lo abrimos
-            if($(this).next().is(':hidden') == true) {
-
-              //Añade la clase on en el botón
-              $(this).addClass('on');
-
-              //Abre el slide
-              $(this).next().slideDown('slow');
-            }
-
-          });
-
-          // Cerramos todo el contenido al cargar la página
-          $('.dropdownContent').hide();
-
-});
-        </script>
-        <legend><span class="number">2</span> Información adicional</legend>
-        <textarea name="field3" placeholder="Centro de estudio"></textarea>
-        </fieldset>
-        <input type="submit" value="Registrar" />
-        </form>
-        </div>  
-      </head>
-
+      </fieldset>
+      <button type="submit" href="/">Enviar</button>
+    </form>
+    </div> 
+  </body>
 </html>
-
-
