@@ -1,0 +1,99 @@
+html, body {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 15px;
+    background: #1a1a1a;
+    }
+    form {
+    border: 5px solid #fbc02d;
+    background: #fbc02d;
+    margin-top: 12%;
+    }
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    }
+    button {
+    background-color: #000000;
+    color: white;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+    }
+    h1 {
+    text-align:center;
+    fone-size:18;
+    }
+    .formcontainer {
+    text-align: center;
+    margin: 24px 50px 12px;
+    }
+    .container {
+    padding: 16px 0;
+    text-align:left;
+    background-color:#fbc02d;
+    }
+    span.psw {
+    float: right;
+    padding-top: 0;
+    padding-right: 15px;
+    }
+    /* Change styles for span on extra small screens */
+    @media screen and (max-width: 300px) {
+    span.psw {
+    display: block;
+    float: none;
+    }
+}
+
+#lbl{
+    padding-left: 15px
+}
+
+.icon {
+    font-size: 110px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+}
+
+#register-link {
+    float: right;
+    margin-right: 135px;
+   
+}
+
+.enlaceboton {    
+    font-family: Roboto, Arial, sans-serif;
+    width: 150px;
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 4px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: 700px;
+  }
+  .enlaceboton:link,
+  .enlaceboton:visited {
+    border-top: 1px solid #cccccc;
+    border-bottom: 2px solid #666666;
+    border-left: 1px solid #cccccc;
+    border-right: 2px solid #666666;
+  }
+  .enlaceboton:hover {
+    border-bottom: 1px solid #cccccc;
+    border-top: 2px solid #666666;
+    border-right: 1px solid #cccccc;
+    border-left: 2px solid #666666;
+  }

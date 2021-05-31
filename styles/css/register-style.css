@@ -15,6 +15,33 @@ img.logo {
   background-position: center;
 }
 
+.enlaceboton {    
+  font-family: Roboto, Arial, sans-serif;
+  width: 150px;
+  font-size: 11pt;
+  font-weight: bold;
+  padding: 4px;
+  background-color: #fbc02d;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20%;
+  border-style: solid;
+  border-radius: 5px;
+}
+.enlaceboton:link,
+.enlaceboton:visited {
+  border-top: 1px solid #cccccc;
+  border-bottom: 2px solid #666666;
+  border-left: 1px solid #cccccc;
+  border-right: 2px solid #666666;
+}
+.enlaceboton:hover {
+  border-bottom: 1px solid #cccccc;
+  border-top: 2px solid #666666;
+  border-right: 1px solid #cccccc;
+  border-left: 2px solid #666666;
+}
+
 html, body {
     min-height: 100%;
     }
@@ -143,4 +170,3 @@ html, body {
     width: calc(60% + 16px);
     }
     }
- 

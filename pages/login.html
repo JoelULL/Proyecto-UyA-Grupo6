@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link href="../styles/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <!--Import jQuery-->
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <!--Import style.css-->
-  <link href="../styles/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aplicación para la gestión del tiempo de estudio</title>
-</head>
-
-<body id="login">
-    <div id = "login-form">
-        <img id = "login-logo" src="../models/image/logo.png" alt="Logo ESIT-APP">
-        <div class="form-style-5">
-            <form class="login">
-            <fieldset>
-            <legend>Inicia sesión en ESIT-APP</legend>
-            <label></label><input type="text" name="Email" placeholder="Usuario o email*">
-            <input type="password" name="contraseña" placeholder="Contraseña*">
-            <a href="register.html"><strong>¿Olvidó su contraseña?</strong></a>
-
-            <div id ="login-register">
-                <p>¿Eres nuevo en ESIT-APP? <a href="register.html"><strong>Regístrate.</strong></a></p> 
-            </div>
-        
-        <button class="btn waves-effect waves-light black" type="submit" name="action">Inicia sesión
-            <i class="material-icons right">send</i>
-        </button>
-        </div>
-</div>
-</body> 
-
-
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="../styles/css/login-style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Inicio de Sesión</title>
+  </head>
+  <body>
+    <form action="/action_page.php">
+      <h1>Iniciar sesión</h1>
+      <div class="icon">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div>
+        <a href="index.html" class="enlaceboton">Volver a inicio</a>
+      </div>
+      <div class="formcontainer">
+      <div class="container">
+        <label for="uname"><strong>Nombre de Usuario</strong></label>
+        <input type="text" placeholder="Introduzca su nombre de usuario" name="uname" required>
+        <label for="mail"><strong>E-mail</strong></label>
+        <input type="text" placeholder="Introduzca su E-mail" name="mail" required>
+        <label for="psw"><strong>Contraseña</strong></label>
+        <input type="password" placeholder="Introduzca contraseña" name="psw" required>
+      </div>
+      <button type="submit"><strong>Inicia sesión</strong></button>
+      <div class="container">
+        <label id=lbl>
+        <input type="checkbox"  checked="checked" name="remember"> Recuérdame
+        </label>
+        <span class="psw"><a href="#">¿Olvidó su contraseña?</a></span>
+        <span id="register-link"><a href="register.html">¿No tienes una cuenta? Regístrate</a></span>
+      </div>
+    </form>
+  </body>
+</html> 
