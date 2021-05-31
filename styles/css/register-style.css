@@ -1,3 +1,10 @@
+img.logo {
+	margin-top: 20px;
+	margin-left: 20px;
+  height: 150px;
+  width: 150px;
+}
+
 #banner {
   padding: 7px;
   display: flex;   
