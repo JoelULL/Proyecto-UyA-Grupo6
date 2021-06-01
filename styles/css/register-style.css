@@ -44,6 +44,7 @@ img.logo {
 
 html, body {
     min-height: 100%;
+    background-color: #1a1a1a;
     }
     body, div, form, input, select, p { 
     padding: 0;
@@ -157,16 +158,45 @@ html, body {
     background: #fbc02d;
     }
     @media (min-width: 568px) {
-    .account-details >div, .personal-details >div {
-    width: 50%;
+      .account-details >div, .personal-details >div {
+      width: 50%;
+      }
+      label {
+      width: 40%;
+      }
+      input {
+      width: 60%;
+      }
+      select, .children, .gender, .bdate-block {
+      width: calc(60% + 16px);
+      }
     }
-    label {
-    width: 40%;
-    }
-    input {
-    width: 60%;
-    }
-    select, .children, .gender, .bdate-block {
-    width: calc(60% + 16px);
-    }
-    }
+
+  #tabla3{
+      border: 1px solid #fbc02d;
+      width: 400px;
+      margin-bottom: 20px;
+      margin-left: 30px;
+   }
+   #cabtab3{
+      background-color: #fbc02d;
+      font-weight: bold;
+      font-size: 10pt;
+      padding: 2 2 2 2px;
+   }
+   #cuerpotab3{
+      font-size: 10pt;
+      padding: 4 4 4 4px;
+      background-color: #1a1a1a;
+   }
+   #cuerpotab3 ul{
+      margin: 0 2 0 20px;
+      padding: 0 0 0 0px;
+      margin-left: 15px;
+   }
+   #cuerpotab3 li{
+      margin: 0 2 0 2px;
+      padding: 0 0 0 0px;
+      color:rgb(207, 204, 204);
+      margin-left: 5px;
+   }
