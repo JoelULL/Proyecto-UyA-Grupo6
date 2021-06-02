@@ -12,32 +12,54 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!--Import style.css-->
     <link href="../styles/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Aplicación para la gestión del tiempo de estudio</title>
   </head>
-<body>
-  <header>
-    <div id="banner">
-      <a href="index.html"><img class="logo" src="../models/image/logo.png"></a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+  <body>
+    <header>
+      <div id="banner">
+        <div id="logo">
+          <img src= "../models/image/logo.png" alt="nombre de la empresa" class= "logo" class="hide-from-desktop"/>
       </div>
-    <nav>
-      <div class="nav-wrapper">
-        <ul class="left hide-on-med-and-down">
-          <li><a class="nav-bar" href="index.html"><strong>Inicio</strong></a></li>
-          <li><a class="nav-bar" href="introduccion.html"><strong>Nuestro proyecto</strong></a></li>
-          <li class="active"><a class="nav-bar" href="componentes.html"><strong>Componentes</strong></a></li>
-          <li><a class="nav-bar" href=""><strong>Accesibilidad</strong></a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
+        </div>
+        <nav>
+          <div class="nav-wrapper"> 
+            <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="left hide-on-med-and-down ">
+              <li><a href="./index.html" class="nav-bar"><strong>Inicio</strong></a></li>
+              <li><a href="./proyect.html" class="nav-bar"><strong>Nuestro proyecto</strong></a></li>
+              <li class="active"><a href="./componentes.html" class="nav-bar"><strong>Componentes</strong></a></li>
+              <li><a href="#" class="nav-bar"><strong>Accesibilidad</strong></a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down ">
+              <li id="nav-search">
+                <input type="search" id="search" placeholder="Buscar..." />
+              </li>
+              <li><a href="./login.html" class="nav-bar"><strong>Iniciar sesión</strong></a></li>
+              <li><a href="./register.html" class="nav-bar"><strong>Regístrate</strong></a></li>
+            </ul>
+          </div>
+        </nav>
+        <ul class="sidenav" id="mobile-nav">
           <li id="nav-search">
             <input type="search" id="search" placeholder="Buscar..." />
           </li>
-          <li><a class="nav-bar" href="login.html"><strong>Iniciar sesión</strong></a></li>
-          <li><a class="nav-bar" href="register.html"><strong>Regístrate</strong></a></li>
+          <li><a href="./index.html" class="nav-bar"><strong>Inicio</strong></a></li>
+          <li><a href="./proyect.html" class="nav-bar"><strong>Nuestro proyecto</strong></a></li>
+          <li class="active"><a href="./componentes.html" class="nav-bar"><strong>Componentes</strong></a></li>
+          <li><a href="#" class="nav-bar"><strong>Accesibilidad</strong></a></li>
+          <li><a href="./login.html" class="nav-bar"><strong>Iniciar sesión</strong></a></li>
+          <li><a href="./register.html" class="nav-bar"><strong>Regístrate</strong></a></li>
         </ul>
-      </div>
-      </div>
-    </nav>
   </header>
   <div class="container">
     <p><strong>Aquí tienes a los desarrolladores de la aplicación:</strong></p>
