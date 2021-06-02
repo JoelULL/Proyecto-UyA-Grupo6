@@ -45,13 +45,38 @@ html, body {
     padding-top: 0;
     padding-right: 15px;
     }
-    /* Change styles for span on extra small screens */
-    @media screen and (max-width: 100px) {
-    span.psw {
-    display: block;
-    float: none;
+    @media screen and (max-width: 1000px){
+      form{
+        width: 480px;
+      }
+    
+      .login-content h2{
+            font-size: 2.4rem;
+            margin: 8px 0;
+      }
+    
+      .img img{
+        width: 400px;
+      }
     }
-}
+    
+    @media screen and (max-width: 900px){
+      .container{
+        grid-template-columns: 1fr;
+      }
+    
+      .img{
+        display: none;
+      }
+    
+      .wave{
+        display: none;
+      }
+    
+      .login-content{
+        justify-content: center;
+      }
+    }
 
 #lbl{
     padding-left: 15px
@@ -82,7 +107,7 @@ html, body {
     border-style: solid;
     border-radius: 5px;
     margin-top: 100px;
-    margin-left: 700px;
+    margin-left: 50px;
   }
   .enlaceboton:link,
   .enlaceboton:visited {
