@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link href="../styles/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!--Import jQuery-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!--Import style.css-->
+  <link href="../styles/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio EsitApp</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
+<body id="accbody">
+  <header>
+    <div id="banner">
+      <div id="logo">
+        <img src= "../models/image/logo.png" alt="nombre de la empresa" class= "logo" class="hide-from-desktop"/>
+    </div>
+      </div>
+      <nav>
+        <div class="nav-wrapper"> 
+          <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="left hide-on-med-and-down ">
+            <li><a href="./index.html" class="nav-bar"><strong>Inicio</strong></a></li>
+            <li><a href="./proyect.html" class="nav-bar"><strong>Nuestro proyecto</strong></a></li>
+            <li><a href="./componentes.html" class="nav-bar"><strong>Componentes</strong></a></li>
+            <li class="active"><a href="./accessibility.html" class="nav-bar"><strong>Accesibilidad</strong></a></li>
+          </ul>
+          <ul class="right hide-on-med-and-down ">
+            <li id="nav-search">
+              <input type="search" id="search" placeholder="Buscar..." />
+            </li>
+            <li><a href="./login.html" class="nav-bar"><strong>Iniciar sesión</strong></a></li>
+            <li><a href="./register.html" class="nav-bar"><strong>Regístrate</strong></a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-nav">
+        <li id="nav-search">
+          <input type="search" id="search" placeholder="Buscar..." />
+        </li>
+        <li><a href="./index.html" class="nav-bar"><strong>Inicio</strong></a></li>
+        <li><a href="./proyect.html" class="nav-bar"><strong>Nuestro proyecto</strong></a></li>
+        <li><a href="./componentes.html" class="nav-bar"><strong>Componentes</strong></a></li>
+        <li class="active"><a href="./accessibility.html" class="nav-bar"><strong>Accesibilidad</strong></a></li>
+        <li><a href="./login.html" class="nav-bar"><strong>Iniciar sesión</strong></a></li>
+        <li><a href="./register.html" class="nav-bar"><strong>Regístrate</strong></a></li>
+      </ul>
+  </header>
+
+  <div id= "accessibility">
+    <p id="contentacc"> Este portal se ha comprometido a hacer accesible su sitio web de conformidad con el Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público (Se abre en nueva ventana).
+
+      <br><br>La presente declaración de accesibilidad se aplica al sitio web de ESITApp.</p>
+  </div>
+
+</body>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</html>

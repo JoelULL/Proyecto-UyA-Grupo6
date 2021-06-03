@@ -202,3 +202,22 @@ a.nav-bar {
 @media only screen and (max-width: 59.6875em) {
     .hide-from-desktop{display:none;}
 }
+
+#accessibility {
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-right: 25%;
+  margin-left: 25%;
+  text-align: justify;
+
+}
+
+#accbody {
+  background-color: #1a1a1a;
+}
+
+#contentacc {
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 1%;
+}
