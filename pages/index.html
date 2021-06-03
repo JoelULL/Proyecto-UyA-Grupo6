@@ -61,25 +61,18 @@
         <li><a href="./register.html" class="nav-bar"><strong>Regístrate</strong></a></li>
       </ul>
   </header>
-
-   <!--  Imagen Zoom   -->
-  <script>
-    $(document).ready(function(){
-        $('.zoom').hover(function() {
-            $(this).addClass('transition');
-        }, function() {
-            $(this).removeClass('transition');
-        });
-    });
-    </script>
-
+  <div id="indxinfo">
+    <h3 id="titleindx"><strong>¡Bienvenido a nuestra web!</strong></h3>
+    <p>Nuestro objetivo principal es hacer que tu rendimiento en los estudios mejore, para que obtengas mejores resultados y ayudarte a trabajar por tu futuro. Si tienes problemas de concentración, si no sabes cómo organizar tu tiempo... ¡Este es tu sitio!
+      <br><br>A continuación te mostramos una serie de imágenes en la que puedes hacer click para saber más de nuestros objetivos.<br>¡No te los pierdas!</p>
+  </div>
   <div class="container">
     <div class="section">
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><img src="../models/image/estudio.jpg" class="zoom" alt="Chica estudiando"></h2>
+            <h2 class="center light-blue-text"><a title= "ayuda a organizarte" href="./index/techniques.html"><img src="../models/image/estudio.jpg" class="zoom" alt="Chica estudiando"/></h2></a>
               <h5 class="center">Ayuda a organizarte</h5>
 
             <p class="light">Mejora tu rendimiento escolar, te da consejos de como preparar tus sesiones de estudio, incluye información sobre tecnicas de estudio y mucho más.</p>
@@ -88,7 +81,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><img src="../models/image/tiempo.png" class="zoom" alt="Reloj representando el tiempo"></h2>
+            <h2 class="center light-blue-text"><a title= "optimiza tu tiempo" href="./index/timeopt.html"><img src="../models/image/tiempo.png" class="zoom" alt="reloj"/></h2></a>
               <h5 class="center">Optimiza tu tiempo</h5>
 
             <p class="light">Organiza tu tiempo de estudio para que saques el mayor provecho. Establece tiempos de descanso para mantener tu productividad al 100%. </p>
@@ -97,7 +90,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><img src="../models/image/profesor.jpg" class="zoom" alt="Profesor mirando la pizarra"></h2>
+            <h2 class="center light-blue-text"><a title= "Estadísticas con profesores" href="./index/feedback.html"><img src="../models/image/profesor.jpg" class="zoom" alt="profesor y pizarra"/></h2></a>
               <h5 class="center">Comparte tus estadísticas</h5>
 
             <p class="light">Da un feedback a tus profesores anonimamente para que ellos puedan mejorar el contenido de sus asignaturas. Con nuestra app profesores y alumnos trabajan para mejorar el rendimiento de los alumnos, y a gestionar la carga de trabajo.</p>
@@ -108,8 +101,42 @@
     <br><br>
   </div>
 
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="black-text">Contacta con nosotros</h5>
+          <p class="black-text text-lighten-4">Si tienes alguna cuestión en la que podamos ayudarte a resolver no dudes<br>en ponerte en contacto con nosotros.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="black-text">Emails y teléfonos:</h5>
+          <ul>
+            <li id="blackli">Número de atención al cliente: (+34)677234567</li>
+            <li id="blackli">Email de contacto clientes: help.client@esitapp.es</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+          © 2021 Copyright EsitAPP
+      <a class="black-text text-lighten-4 right" href="./accessibility.html">Accesibilidad</a>
+      </div>
+    </div>
+  </footer>
 </body>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <!--  Imagen Zoom   -->
+    <script>
+      $(document).ready(function(){
+          $('.zoom').hover(function() {
+              $(this).addClass('transition');
+          }, function() {
+              $(this).removeClass('transition');
+          });
+      });
+      </script>
 </html>
 
