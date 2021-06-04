@@ -267,28 +267,20 @@ a.nav-bar {
   margin-right: 100px;
 }
 
-.video{
-	position: relative;
-	padding-bottom: 20%;
-	padding-top: 30px;
-	height: 0;
-  
-}
+
 .video iframe {
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	max-width: 400px;
   height: 200px;
-
+  margin-bottom: 100px;
 }
 
 #components {
   margin-top: 50px;
   margin-bottom: 100px;
 }
-
 
 .imgUser {
   display: flex;
@@ -329,3 +321,34 @@ hr {
   background-color: #1a1a1a; 
   width :85%;
 }
+
+ /* Style the list */
+ ul.breadcrumb {
+  margin-top: 20px;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: ">\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+} 
