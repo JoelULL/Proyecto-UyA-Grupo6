@@ -306,6 +306,14 @@ a.nav-bar {
 }
 
 #test {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin:10px auto;
+  display:block;
+}
+
+#introimg {
   max-width: 100%;
   height: auto;
   margin:10px auto;
@@ -314,4 +322,10 @@ a.nav-bar {
 
 #space {
   margin-bottom: 100px;
+}
+
+hr {
+  color: #1a1a1a; 
+  background-color: #1a1a1a; 
+  width :85%;
 }
