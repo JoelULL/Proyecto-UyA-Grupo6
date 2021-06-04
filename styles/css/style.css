@@ -269,19 +269,49 @@ a.nav-bar {
 
 .video{
 	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 25px;
+	padding-bottom: 20%;
+	padding-top: 30px;
 	height: 0;
+  
 }
 .video iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 40%;
-	height: 200px;
+	width: 100%;
+	max-width: 400px;
+  height: 200px;
+
 }
 
 #components {
   margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+
+.imgUser {
+  display: flex;
+  width: 400px;
+  height: 350px;
+  margin: 0 auto; 
+  margin-top: 15px;
+  overflow: hidden; 
+  justify-content: center;
+}
+
+.imgUser img {
+  width: 100%;
+  height: auto;
+}
+
+#test {
+  max-width: 100%;
+  height: auto;
+  margin:10px auto;
+  display:block;
+}
+
+#space {
   margin-bottom: 100px;
 }
