@@ -12,22 +12,22 @@
   <body>
     <header>
       <div id="banner">
-        <a href="index.html"><img class="logo" src="../models/image/logo.png"></a>
+        <a href="./index.html"><img class="logo" alt="logo esitapp" src="../models/image/logo.png" tabindex="1"></a>
         </div>
     </header>
     <div class="main-block">
-    <form action="/">
+    <form action = "post">
       <h1>Registrate Gratis</h1>
       <fieldset>
         <legend>
           <h3>Detales de Cuenta</h3>
         </legend>
-        <div  class="account-details">
-          <div><label>Nombre de usuario*</label><input type="text" name="name" required></div>
-          <div><label>Contraseña*</label><input type="password" name="name" required></div>
-          <div><label>Email*</label><input type="text" name="name" required></div>
-          <div><label>Repetir contraseña*</label><input type="password" name="name" required></div>
-          <div><label>Repetir email*</label><input type="text" name="name" required></div>
+        <div class="account-details">
+          <div><label>Nombre de usuario*</label><input type="text" name="name" aria-describedby="unsername" required tabindex="2"></div>
+          <div><label>Contraseña*</label><input type="password" name="name"  aria-describedby="password" tabindex="5" required></div>
+          <div><label>Email*</label><input type="text" name="name" aria-describedby="email" required tabindex="3"></div>
+          <div><label>Repetir contraseña*</label><input type="password" name="name" required tabindex="6"></div>
+          <div><label>Repetir email*</label><input type="text" name="name" required tabindex="4"></div>
         </div>
       </fieldset>
       <fieldset>
@@ -36,16 +36,16 @@
         </legend>
         <div  class="personal-details">
           <div>
-            <div><label>Nombre*</label><input type="text" name="name" required></div>
-            <div><label>Apellido*</label><input type="text" name="name" required></div>
-            <div><label>Grado que cursas*</label><input type="text" name="name"></div>
+            <div><label for ="nombre">Nombre*</label><input type="text" name="name" tabindex="7" required></div>
+            <div><label>Apellido*</label><input type="text" name="name" tabindex="8" required></div>
+            <div><label>Grado que cursas*</label><input type="text" name="name" tabindex="9" required></div>
             <div>
               <label>Curso*</label>  
-              <select>
-                <option value=""></option>
-                <option value="1">1º</option>
-                <option value="2">2º</option>
-                <option value="3">3º</option>
+              <select tabindex="10" required>
+                <option value="" ></option>
+                <option value="1" >1º</option>
+                <option value="2" >2º</option>
+                <option value="3" > 3º</option>
                 <option value="4">4º</option>
                 <option value="Otros">Otros</option>
               </select>
@@ -56,19 +56,19 @@
             <div>
               <label>Género*</label>
               <div class="gender">
-                <input type="radio" value="none" id="masculino" name="gender" required/>
+                <input type="radio" value="none" id="masculino" name="gender" tabindex="11" required/>
                 <label for="masculino" class="radio">Masculino</label>
-                <input type="radio" value="none" id="femenino" name="gender" required/>
+                <input type="radio" value="none" id="femenino" name="gender" tabindex="12" required/>
                 <label for="femenino" class="radio">Femenino</label>
-                <input type="radio" value="none" id="No especifica" name="other" required/>
+                <input type="radio" value="none" id="No especifica" name="other" tabindex="13" required/>
                 <label for="No especifica" class="radio">No especifica</label>
               </div>
             </div>
-            <div><label>Fecha de nacimiento*</label><input type="date" name="date" required></div>
-            <div><label>País de origen*</label><input type="text" name="country" required></div>
+            <div><label>Fecha de nacimiento*</label><input type="date" name="date" required tabindex="14"></div>
+            <div><label>País de origen</label><input type="text" name="country" tabindex="15"></div>
             <div>
-              <label>¿Eres Docente?*</label>
-              <div class="children"><input type="checkbox" name="name" required></div>
+              <label>¿Eres Docente?</label>
+              <div class="children"><input type="checkbox" name="name" aria-checked="mixed" tabindex="16"></div>
             </div>
           </div>
         </div>
@@ -79,14 +79,14 @@
         </legend>
         <div  class="terms-mailing">
           <div class="checkbox">
-            <input type="checkbox" name="checkbox"><span>Acepto <a href="https://www.w3docs.com/privacy-policy">la política de privacidad de Esit-app.</a></span>
+            <input type="checkbox" name="checkbox" tabindex="17"><span>Acepto <a href="https://www.w3docs.com/privacy-policy" tabindex="18">la política de privacidad de Esit-app.</a></span>
           </div>
           <div class="checkbox">
-            <input type="checkbox" name="checkbox"><span>Quiero recibir notificaciones personalizadas</span>
+            <input type="checkbox" name="checkbox" tabindex="19"><span>Quiero recibir notificaciones personalizadas</span>
           </div>
       </fieldset>
-      <button type="submit" href="/">Enviar</button>
-      <a href="index.html" class="enlaceboton">Volver a inicio</a>
+      <button type="submit" aria-label="enviar" href="/" tabindex="20">Enviar</button>
+      <a role = button aria-label="volver a inicio" href="./index.html" class="enlaceboton" tabindex="21">Volver a inicio</a>
     </form>
     </div> 
       <div id=tabla3>
@@ -95,9 +95,9 @@
         </div>
         <div id=cuerpotab3>
          <ul>
-           <li type="disc">Asegurese de que el nombre de usuario no está en uso.</li>
-           <li type="disc">Utilice un correo electrónico que no esté usado.</li>
-           <li type="disc">La contraseña debe de tener al menos 8 caracteres y una mayúscula.</li>
+           <li type="disc" id="username">Asegurese de que el nombre de usuario no está en uso.</li>
+           <li type="disc" id="email">Utilice un correo electrónico que no esté usado.</li>
+           <li type="disc" id="password">La contraseña debe de tener al menos 8 caracteres y una mayúscula.</li>
          </ul>
         </div>
       </div>

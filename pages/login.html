@@ -16,9 +16,9 @@
         <i class="fas fa-user-circle"></i>
       </div>
       <div>
-        <a href="index.html" class="enlaceboton">Volver a inicio</a>
+        <a href="./index.html" class="enlaceboton" tabindex="0">Volver a inicio</a>
       </div>
-      <div class="formcontainer">
+      <div class="formcontainer" role = "form">
       <div class="container">
         <label for="uname"><strong>Nombre de Usuario</strong></label>
         <input type="text" placeholder="Introduzca su nombre de usuario" name="uname" required>
@@ -30,7 +30,7 @@
       <button type="submit"><strong>Inicia sesión</strong></button>
       <div class="container">
         <label id=lbl>
-        <input type="checkbox"  checked="checked" name="remember"> Recuérdame
+        <input type="checkbox" checked="checked" name="remember" aria-checked="mixed"> Recuérdame
         </label>
         <span class="psw"><a href="#">¿Olvidó su contraseña?</a></span>
         <span id="register-link"><a href="register.html">¿No tienes una cuenta? Regístrate</a></span>
