@@ -41,11 +41,9 @@
             <li><a href="./accessibility.html" class="nav-bar" tabindex="5"><strong>Accesibilidad</strong></a></li>
           </ul>
           <ul class="right hide-on-med-and-down ">
-            <li id="nav-search">
-              <form>
-                <label>Busqueda:</label>
-                <input type="search" id="search" placeholder="Buscar..." tabindex="8"/>
-              </form>
+            <li>
+              <input type="text" name="search" aria-label="Search">
+              <button type="submit">Search</button>
             </li>
             <li><a href="./login.html" class="nav-bar" tabindex="6"><strong>Iniciar sesión</strong></a></li>
             <li><a href="./register.html" class="nav-bar" tabindex="7"><strong>Regístrate</strong></a></li>
@@ -53,7 +51,7 @@
         </div>
       </nav>
       <ul class="sidenav" id="mobile-nav">
-        <li id="nav-search">
+        <li>
           <form>
             <label>Busqueda:</label>
               <input type="search" id="search" placeholder="Buscar..." />
