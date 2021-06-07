@@ -7583,7 +7583,7 @@ input[type=range]::-ms-thumb {
 }
 
 .sidenav li > a {
-  color: rgba(0, 0, 0, 0.87);
+  color: black;
   display: block;
   font-size: 14px;
   font-weight: 500;
