@@ -24,10 +24,10 @@
         </legend>
         <div class="account-details" role = form>
           <div><label for="inputusername">Nombre de usuario*</label><input type="text" name="name" id="inputusername" aria-describedby="username" required tabindex="2"></div>
-          <div><label>Contraseña*</label><input type="password" name="name"  aria-describedby="password" tabindex="5" required></div>
-          <div><label>Email*</label><input type="text" name="name" aria-describedby="email" required tabindex="3"></div>
-          <div><label>Repetir contraseña*</label><input type="password" name="name" required tabindex="6"></div>
-          <div><label>Repetir email*</label><input type="text" name="name" required tabindex="4"></div>
+          <div><label for="inputpass">Contraseña*</label><input type="password" name="password" id="inputpass" aria-describedby="password" tabindex="5" required></div>
+          <div><label for="inputemail">Email*</label><input type="text" name="email" aria-describedby="email" id="inputemail" required tabindex="3"></div>
+          <div><label for="inputrepeatpass">Repetir contraseña*</label><input type="password" name="password" id="inputrepeatpass" required tabindex="6"></div>
+          <div><label for="inputrepeatemail">Repetir email*</label><input type="text" name="email" id="inputrepeatemail" required tabindex="4"></div>
         </div>
       </fieldset>
       <fieldset>
@@ -36,9 +36,9 @@
         </legend>
         <div  class="personal-details">
           <div>
-            <div><label for ="name">Nombre*</label><input type="text" name="name" tabindex="7" required></div>
-            <div><label>Apellido*</label><input type="text" name="name" tabindex="8" required></div>
-            <div><label>Grado que cursas*</label><input type="text" name="name" tabindex="9" required></div>
+            <div><label for ="name">Nombre*</label><input type="text" name="name" id= "name"tabindex="7" required></div>
+            <div><label for ="inputsurname">Apellido*</label><input type="text" name="surname" id="inputsurname" tabindex="8" required></div>
+            <div><label>Grado que cursas*</label><input type="text" name="grade" tabindex="9" required></div>
             <div>
               <label>Curso*</label>  
               <select tabindex="10" required>
@@ -64,11 +64,11 @@
                 <label for="No especifica" class="radio">No especifica</label>
               </div>
             </div>
-            <div><label>Fecha de nacimiento*</label><input type="date" name="date" required tabindex="14"></div>
-            <div><label>País de origen</label><input type="text" name="country" tabindex="15"></div>
+            <div><label for="inputbirthdate">Fecha de nacimiento*</label><input type="date" name="date"  id="inputbirthdate" required tabindex="14"></div>
+            <div><label for="inputcountry">País de origen</label><input type="text" name="country"  id="inputcountry" tabindex="15"></div>
             <div>
-              <label>¿Eres Docente?</label>
-              <div class="children"><input type="checkbox" name="name" aria-checked="mixed" tabindex="16"></div>
+              <label for="inputteacher">¿Eres Docente?</label>
+              <div class="children"><input type="checkbox" name="teacher" id="inputteacher" aria-checked="mixed" tabindex="16"></div>
             </div>
           </div>
         </div>
