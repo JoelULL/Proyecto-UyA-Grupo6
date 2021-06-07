@@ -1,4 +1,9 @@
 /* Imagen zoom */
+
+#index-body {
+  background-color: #ffffff;
+}
+
 img.zoom {
 	width: 100%;
   -webkit-transition: all .2s ease-in-out;
