@@ -22,7 +22,7 @@ img.logo {
   font-weight: bold;
   padding: 4px;
   background-color: #fbc02d;
-  color: #ffffff;
+  color: black;
   text-decoration: none;
   margin-left: 20%;
   border-style: solid;
@@ -152,7 +152,7 @@ html, body {
     background: #fbc02d; 
     font-size: 14px;
     font-weight: 600;
-    color: #fff;
+    color: black;
     }
     button:hover {
     background: #fbc02d;
