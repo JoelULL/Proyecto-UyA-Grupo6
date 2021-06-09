@@ -14,7 +14,8 @@
      https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
-    
+    <!-- Import register funcionality -->
+    <script src="./../src/js/register.js"></script>
     <script>
       // Your web app's Firebase configuration
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -45,11 +46,17 @@
         <legend>
           <h3>Detalles de Cuenta</h3>
         </legend>
+
+        <!-- Mensajes de Verificación -->
+        <div id="error" class="alert alert-danger ocultar" role="alert">
+          Las Contraseñas no coinciden, vuelve a intentar!
+        </div>
+
         <div class="account-details" role = "form">
           <div><label for="inputusername">Nombre de usuario*</label><input type="text" name="name" id="inputusername" aria-describedby="username" required tabindex="2"></div>
           <div><label for="inputpass">Contraseña*</label><input type="password" name="password" id="inputpass" aria-describedby="password" tabindex="5"></div>
           <div><label for="inputemail">Email*</label><input type="email" name="email" aria-describedby="email" id="inputemail" tabindex="3"></div>
-          <div><label for="inputrepeatpass">Repetir contraseña*</label><input type="password" name="password" id="inputrepeatpass" required tabindex="6"></div>
+          <div><label for="inputrepeatpass">Repetir contraseña*</label><input type="password" name="re-password" id="inputrepeatpass" required tabindex="6"></div>
           <div><label for="inputrepeatemail">Repetir email*</label><input type="text" name="email" id="inputrepeatemail" required tabindex="4"></div>
         </div>
       </fieldset>
@@ -110,7 +117,7 @@
             <input type="checkbox" name="notificacions" tabindex="19" id="inputnotifications"><span>Quiero recibir notificaciones personalizadas</span>
           </div>
       </fieldset>
-      <button type="submit" aria-label="enviar" tabindex="20" onclick="registrar()">Enviar</button>
+      <button type="submit" aria-label="enviar" tabindex="20" onclick="verificarPasswords();registrar()" id="send">Enviar</button>
       <a role = button aria-label="volver a inicio" href="./index.html" class="enlaceboton" tabindex="21">Volver a inicio</a>
     </form>
     </div> 

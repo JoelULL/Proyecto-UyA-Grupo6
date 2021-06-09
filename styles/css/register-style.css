@@ -204,3 +204,12 @@ html, body {
 #hidden {
   visibility: hidden;
 }
+
+.ocultar {
+  display: none;
+}
+
+.mostrar {
+  display: block;
+  color: red;
+}

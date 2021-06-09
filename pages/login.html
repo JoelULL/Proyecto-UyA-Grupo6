@@ -13,6 +13,7 @@
         <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
         <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
     
         <script>
           // Your web app's Firebase configuration
@@ -46,11 +47,11 @@
         <label for="uname"><strong>Nombre de Usuario</strong></label>
         <input type="text" placeholder="Introduzca su nombre de usuario"  id="uname" name="uname" required>
         <label for="mail"><strong>E-mail</strong></label>
-        <input type="email" placeholder="Introduzca su E-mail" id="mail" name="email" required>
+        <input type="email" placeholder="Introduzca su E-mail" id="maillog" name="email" required>
         <label for="psw"><strong>Contraseña</strong></label>
-        <input type="password" placeholder="Introduzca contraseña" name="password" id="psw" required>
+        <input type="password" placeholder="Introduzca contraseña" name="password" id="passlog" required>
       </div>
-      <button type="submit"><strong>Inicia sesión</strong></button>
+      <button type="submit" onclick="ingreso()"><strong>Inicia sesión</strong></button>
       <div class="container">
         <label id=lbl>
         <input type="checkbox" checked="checked" name="remember" aria-checked="mixed"> Recuérdame
@@ -59,6 +60,6 @@
         <span id="register-link"><a href="register.html">¿No tienes una cuenta? Regístrate</a></span>
       </div>
     </form>
-    <script src="./src/firebase.js"></script>
+    <script src="../src/app/firebase.js"></script>
   </body>
 </html> 
