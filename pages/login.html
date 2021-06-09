@@ -8,6 +8,28 @@
     <link href="../styles/css/login-style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Inicio de Sesión</title>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
+    
+        <script>
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          var firebaseConfig = {
+            apiKey: "AIzaSyCSBuPUDizR4nECjCmtbDUCdmfwXHe_wiE",
+            authDomain: "users-esitapp.firebaseapp.com",
+            projectId: "users-esitapp",
+            storageBucket: "users-esitapp.appspot.com",
+            messagingSenderId: "950924980886",
+            appId: "1:950924980886:web:10b8853f6d7503d64708b7",
+            measurementId: "G-66TQ9RJWP7"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
   </head>
   <body>
     <header></header>
@@ -24,9 +46,9 @@
         <label for="uname"><strong>Nombre de Usuario</strong></label>
         <input type="text" placeholder="Introduzca su nombre de usuario"  id="uname" name="uname" required>
         <label for="mail"><strong>E-mail</strong></label>
-        <input type="text" placeholder="Introduzca su E-mail" id="mail" name="email" required>
+        <input type="email" placeholder="Introduzca su E-mail" id="mail" name="email" required>
         <label for="psw"><strong>Contraseña</strong></label>
-        <input type="password" placeholder="Introduzca contraseña" name="password" id="psw" require d>
+        <input type="password" placeholder="Introduzca contraseña" name="password" id="psw" required>
       </div>
       <button type="submit"><strong>Inicia sesión</strong></button>
       <div class="container">
@@ -37,5 +59,6 @@
         <span id="register-link"><a href="register.html">¿No tienes una cuenta? Regístrate</a></span>
       </div>
     </form>
+    <script src="./src/firebase.js"></script>
   </body>
 </html> 

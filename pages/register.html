@@ -8,6 +8,29 @@
     <link href="../styles/css/register-style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Registro EsitApp</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyCSBuPUDizR4nECjCmtbDUCdmfwXHe_wiE",
+        authDomain: "users-esitapp.firebaseapp.com",
+        projectId: "users-esitapp",
+        storageBucket: "users-esitapp.appspot.com",
+        messagingSenderId: "950924980886",
+        appId: "1:950924980886:web:10b8853f6d7503d64708b7",
+        measurementId: "G-66TQ9RJWP7"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </head>
   <body>
     <header>
@@ -16,7 +39,7 @@
         </div>
     </header> 
     <div class="main-block">
-    <form action ='/authenticate' method = "post">
+    <form>
       <h1>Registrate Gratis</h1>
       <fieldset>
         <legend>
@@ -24,8 +47,8 @@
         </legend>
         <div class="account-details" role = "form">
           <div><label for="inputusername">Nombre de usuario*</label><input type="text" name="name" id="inputusername" aria-describedby="username" required tabindex="2"></div>
-          <div><label for="inputpass">Contraseña*</label><input type="password" name="password" id="inputpass" aria-describedby="password" tabindex="5" required></div>
-          <div><label for="inputemail">Email*</label><input type="text" name="email" aria-describedby="email" id="inputemail" required tabindex="3"></div>
+          <div><label for="inputpass">Contraseña*</label><input type="password" name="password" id="inputpass" aria-describedby="password" tabindex="5"></div>
+          <div><label for="inputemail">Email*</label><input type="email" name="email" aria-describedby="email" id="inputemail" tabindex="3"></div>
           <div><label for="inputrepeatpass">Repetir contraseña*</label><input type="password" name="password" id="inputrepeatpass" required tabindex="6"></div>
           <div><label for="inputrepeatemail">Repetir email*</label><input type="text" name="email" id="inputrepeatemail" required tabindex="4"></div>
         </div>
@@ -36,12 +59,12 @@
         </legend>
         <div  class="personal-details" role="form">
           <div>
-            <div><label for ="name">Nombre*</label><input type="text" name="name" id= "name"tabindex="7" required></div>
-            <div><label for ="inputsurname">Apellido*</label><input type="text" name="surname" id="inputsurname" tabindex="8" required></div>
-            <div><label for="inputgrade">Grado que cursas*</label><input type="text" name="grade" id="inputgrade" tabindex="9" required></div>
+            <div><label for ="name">Nombre*</label><input type="text" name="name" id= "name"tabindex="7" ></div>
+            <div><label for ="inputsurname">Apellido*</label><input type="text" name="surname" id="inputsurname" tabindex="8" ></div>
+            <div><label for="inputgrade">Grado que cursas*</label><input type="text" name="grade" id="inputgrade" tabindex="9" ></div>
             <div>
               <label>Curso*</label>  
-              <select tabindex="10" required>
+              <select tabindex="10" >
                 <option value="" ></option>
                 <option value="1" >1º</option>
                 <option value="2" >2º</option>
@@ -56,15 +79,15 @@
             <div>
               <label>Género*</label>
               <div class="gender">
-                <input type="radio" value="none" id="masculino" name="gender" tabindex="11" required/>
+                <input type="radio" value="none" id="masculino" name="gender" tabindex="11" />
                 <label for="masculino" class="radio">Masculino</label>
-                <input type="radio" value="none" id="femenino" name="gender" tabindex="12" required/>
+                <input type="radio" value="none" id="femenino" name="gender" tabindex="12" />
                 <label for="femenino" class="radio">Femenino</label>
-                <input type="radio" value="none" id="No especifica" name="other" tabindex="13" required/>
+                <input type="radio" value="none" id="No especifica" name="gender" tabindex="13"/>
                 <label for="No especifica" class="radio">No especifica</label>
               </div>
             </div>
-            <div><label for="inputbirthdate">Fecha de nacimiento*</label><input type="date" name="date"  id="inputbirthdate" required tabindex="14"></div>
+            <div><label for="inputbirthdate">Fecha de nacimiento*</label><input type="date" name="date"  id="inputbirthdate" tabindex="14"></div>
             <div><label for="inputcountry">País de origen</label><input type="text" name="country"  id="inputcountry" tabindex="15"></div>
             <div>
               <label for="inputteacher">¿Eres Docente?</label>
@@ -87,7 +110,7 @@
             <input type="checkbox" name="notificacions" tabindex="19" id="inputnotifications"><span>Quiero recibir notificaciones personalizadas</span>
           </div>
       </fieldset>
-      <button type="submit" aria-label="enviar" href="/" tabindex="20">Enviar</button>
+      <button type="submit" aria-label="enviar" tabindex="20" onclick="registrar()">Enviar</button>
       <a role = button aria-label="volver a inicio" href="./index.html" class="enlaceboton" tabindex="21">Volver a inicio</a>
     </form>
     </div> 
@@ -104,4 +127,5 @@
         </div>
       </div>
   </body>
+  <script src="../src/app/firebase.js"></script>
 </html>
