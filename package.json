@@ -1,0 +1,27 @@
+{
+  "name": "proyecto-uya-grupo6",
+  "version": "1.0.0",
+  "description": "Los integrantes del grupo somos:  * [Sandro Jesús Socas Méndez](https://github.com/alu0101208770) * [Joel Aday Dorta Hernández](https://github.com/JoelULL) * [Jose Antonio Trujillo Mendoza](https://github.com/JoseMendoza7) * [Jose Miguel Diaz Gonzalez](https://github.com/alu0101203294)",
+  "main": "src/app/app.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13",
+    "nodejs": "^0.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoelULL/Proyecto-UyA-Grupo6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoelULL/Proyecto-UyA-Grupo6/issues"
+  },
+  "homepage": "https://github.com/JoelULL/Proyecto-UyA-Grupo6#readme"
+}
