@@ -36,6 +36,7 @@ function closeSesion() {
   firebase.auth().signOut()
   .then(function() {
     console.log("Sesion closed");
+    location.reload();
   })
   .catch(function(error) {
     console.log(error);
