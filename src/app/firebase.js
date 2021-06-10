@@ -18,9 +18,7 @@ function ingreso() {
 
   firebase.auth().signInWithEmailAndPassword(emaillog, passwordlog)
     .then((userCredential) => {
-      // Signed in
       var user = userCredential.user;
-      // ...
     })
     .catch((error) => {
       var errorCode = error.code;
@@ -35,11 +33,26 @@ function observerUser() {
       if (user) {
         console.log("worked fine!");
         var uid = user.uid;
-        // ...
+        resgisteredUserContent();
       } else {
         console.log("No user active detected!");
       }
   });
+}
+
+function closeSesion() {
+  firebase.auth().signOut()
+  .then(function() {
+    console.log("Sesion closed");
+  })
+  .catch(function(error) {
+    console.log(error);
+  })
+}
+
+function resgisteredUserContent() {
+  var content = document.getElementById('content');
+  content.innerHTML = `<button type="submit" onclick="closeSesion()"><strong>Cerrar sesión</strong></button>`;
 }
 
 observerUser();

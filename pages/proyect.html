@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link href="../styles/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--Import jQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--Import style.css-->
+    <link href="../styles/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
+    <!--Import proyect.css-->
+    <link href="../styles/css/proyect.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Nuestro Proyecto</title>
+  </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+  <body>
+    <header>
+      <div id="banner">
+        <div id="logo">
+          <a href="./index.html"><img class="logo" alt="logo esitapp" src="../models/image/logo.png" tabindex="1"></a>
+      </div>
+        </div>
+        <nav>
+          <div class="nav-wrapper"> 
+            <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="left hide-on-med-and-down ">
+              <li><a href="./index.html" class="nav-bar" tabindex="2"><strong>Inicio</strong></a></li>
+              <li><a href="./proyect.html" class="nav-bar" tabindex="3"><strong>Nuestro proyecto</strong></a></li>
+              <li class="active"><a href="./componentes.html" class="nav-bar" tabindex="4"><strong>Componentes</strong></a></li>
+              <li><a href="./accessibility.html" class="nav-bar" tabindex="5"><strong>Accesibilidad</strong></a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down ">
+              <li id="nav-search">
+                <input type="search" id="search" placeholder="Buscar..." tabindex="8"/>
+              </li>
+              <li><a href="./login.html" class="nav-bar" tabindex="6"><strong>Iniciar sesión</strong></a></li>
+              <li><a href="./register.html" class="nav-bar" tabindex="7"><strong>Regístrate</strong></a></li>
+            </ul>
+          </div>
+        </nav>
+        <ul class="sidenav" id="mobile-nav">
+          <li id="nav-search">
+            <input type="search" id="search" placeholder="Buscar..." />
+          </li>
+          <li><a href="./index.html" class="nav-bar"><strong>Inicio</strong></a></li>
+          <li><a href="./proyect.html" class="nav-bar"><strong>Nuestro proyecto</strong></a></li>
+          <li class="active"><a href="./componentes.html" class="nav-bar"><strong>Componentes</strong></a></li>
+          <li><a href="./accessibility.html" class="nav-bar"><strong>Accesibilidad</strong></a></li>
+          <li><a href="./login.html" class="nav-bar"><strong>Iniciar sesión</strong></a></li>
+          <li><a href="./register.html" class="nav-bar"><strong>Regístrate</strong></a></li>
+        </ul>
+  </header>
+  <div>
+  <div id="components" class="container">
+    <p><strong>Caldendar</strong></p>
+    <div class="month">
+        <ul>
+          <li class="prev">&#10094;</li>
+          <li class="next">&#10095;</li>
+          <li>August<br><span style="font-size:18px">2021</span></li>
+        </ul>
+      </div>
+      
+      <ul class="weekdays">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+      </ul>
+      
+      <ul class="days">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        ...etc
+      </ul>
+    </div>
+  </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="black-text">Contacta con nosotros</h5>
+            <p class="black-text text-lighten-4">Si tienes alguna cuestión en la que podamos ayudarte a resolver no dudes<br>en ponerte en contacto con nosotros.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="black-text">Emails y teléfonos:</h5>
+            <ul>
+              <li id="blackli">Número de atención al cliente: (+34)677234567</li>
+              <li id="blackli">Email de contacto clientes: help.client@esitapp.es</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+            © 2021 Copyright EsitAPP
+        <a class="black-text text-lighten-4 right" href="./accessibility.html" tabindex="17">Accesibilidad</a>
+        </div>
+      </div>
+    </footer>     
+</body>
+</html>
