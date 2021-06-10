@@ -1,17 +1,3 @@
-function registrar() {
-  var email = document.getElementById('inputemail').value;
-  var password = document.getElementById('inputpass').value;
-  
-  firebase.auth().createUserWithEmailAndPassword(email, password)
-  .then((userCredential) => {
-    var user = userCredential.user;
-  })
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-  });
-}
-
 function ingreso() {
   var emaillog = document.getElementById('maillog').value;
   var passwordlog = document.getElementById('passlog').value;
@@ -39,6 +25,12 @@ function observerUser() {
       }
   });
 }
+observerUser();
+
+function resgisteredUserContent() {
+  var content = document.getElementById('content');
+  content.innerHTML = `<button type="submit" onclick="closeSesion()"><strong>Cerrar sesión</strong></button>`;
+}
 
 function closeSesion() {
   firebase.auth().signOut()
@@ -50,9 +42,6 @@ function closeSesion() {
   })
 }
 
-function resgisteredUserContent() {
-  var content = document.getElementById('content');
-  content.innerHTML = `<button type="submit" onclick="closeSesion()"><strong>Cerrar sesión</strong></button>`;
-}
 
-observerUser();
+
+
