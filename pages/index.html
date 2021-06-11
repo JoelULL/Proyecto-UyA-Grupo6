@@ -43,8 +43,8 @@
           <ul class="right hide-on-med-and-down ">
             <li>
               <form method="get" action="https://www.google.com/search" target="_blank">
-                <input type="search" name="q" placeholder="Término a buscar" autofocus required>
-                <input type="submit"> 
+                <label for="search">      </label>
+                  <input type="search" id="search" name="q" placeholder="Buscar..." tabindex="8" autofocus required>
               </form>
             </li>
             <li><a href="./login.html" class="nav-bar" tabindex="6"><strong>Iniciar sesión</strong></a></li>
@@ -55,15 +55,15 @@
       </nav>
       <ul class="sidenav" id="mobile-nav">
         <li>
-          <form>
+          <form method="get" action="https://www.google.com/search" target="_blank">
             <label class="search-label" for="search-mobile">‎      </label>
-            <input id="search-mobile" type="search" placeholder="buscar...">
+            <input id="search" type="search" name="q" placeholder="Buscar..." autofocus required>
           </form>
         </li>
         <li class="active"><a href="./index.html" class="nav-bar"><strong>Inicio</strong></a></li>
         <li><a href="./proyect.html" class="nav-bar"><strong>Nuestro proyecto</strong></a></li>
         <li><a href="./componentes.html" class="nav-bar"><strong>Componentes</strong></a></li>
-        <li><a href="#" class="nav-bar"><strong>Accesibilidad</strong></a></li>
+        <li><a href="./accessibility.html" class="nav-bar"><strong>Accesibilidad</strong></a></li>
         <li><a href="./login.html" class="nav-bar"><strong>Iniciar sesión</strong></a></li>
         <li><a href="./register.html" class="nav-bar"><strong>Regístrate</strong></a></li>
       </ul>
