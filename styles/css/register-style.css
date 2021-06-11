@@ -77,11 +77,19 @@ html, body {
     border: none;
     border-top: 1px solid #fbc02d;
     }
-    .account-details, .personal-details {
+    .account-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
     }
+
+    .personal-details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
     .account-details >div, .personal-details >div >div {
     display: flex;
     align-items: center;
