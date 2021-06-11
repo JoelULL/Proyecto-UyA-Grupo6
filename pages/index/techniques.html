@@ -41,10 +41,10 @@
             <li><a href="./../accessibility.html" class="nav-bar" tabindex="5"><strong>Accesibilidad</strong></a></li>
           </ul>
           <ul class="right hide-on-med-and-down ">
-            <li id="nav-search">
-              <form>
-                <label class="search-label" for="search"> ‎      </label>
-                <input id="search" type="search" placeholder="Buscar..." tabindex="8">
+            <li>
+              <form method="get" action="https://www.google.com/search" target="_blank">
+                <label for="search">      </label>
+                <input type="search" id="search" name="q" placeholder="Buscar..." tabindex="8" autofocus required>
               </form>
             </li>
             <li><a href="./../login.html" class="nav-bar" tabindex="6"><strong>Iniciar sesión</strong></a></li>
@@ -53,10 +53,10 @@
         </div>
       </nav>
       <ul class="sidenav" id="mobile-nav">
-        <li id="nav-search">
-          <form>
+        <li>
+          <form method="get" action="https://www.google.com/search" target="_blank">
             <label class="search-label" for="search-mobile">‎      </label>
-            <input id="search-mobile" type="search" placeholder="buscar...">
+            <input id="search" type="search" name="q" placeholder="Buscar..." autofocus required>
           </form>
         </li>
         <li><a href="./../index.html" class="nav-bar"><strong>Inicio</strong></a></li>
