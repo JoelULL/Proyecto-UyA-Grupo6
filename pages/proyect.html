@@ -25,18 +25,22 @@
                   </label>
                 </div>
                 <div class="qtr">
+                  <form>
                   <label class="add-event-label">
                 Comienzo
                     <input type="text" class="add-event-edit" placeholder="8:15" id="input-add-event-start-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
                     <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-start-ampm" data-options="a,p,am,pm">
+                  </form>
                   </label>
                 </div>
                 <div class="qtr">
+                  <form>
                   <label class="add-event-label">
                 Final
                     <input type="text" class="add-event-edit" placeholder="9" id="input-add-event-end-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
                     <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-end-ampm" data-options="a,p,am,pm">
                   </label>
+                </form>
                 </div>
                 <div class="half">
                   <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save" class="event-btn--save event-btn">Guardar</a>
