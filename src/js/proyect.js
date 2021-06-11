@@ -4,9 +4,30 @@ function CalendarApp(date) {
       date = new Date();
     }
     
-    this.days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    this.months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    this.quotes = ['Whatever the mind of man can conceive and believe, it can achieve. –Napoleon Hill', 'Strive not to be a success, but rather to be of value. –Albert Einstein', 'Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.  –Robert Frost', 'I attribute my success to this: I never gave or took any excuse. –Florence Nightingale', 'You miss 100% of the shots you don’t take. –Wayne Gretzky', 'The most difficult thing is the decision to act, the rest is merely tenacity. –Amelia Earhart', 'Every strike brings me closer to the next home run. –Babe Ruth', 'Definiteness of purpose is the starting point of all achievement. –W. Clement Stone', 'Life isn’t about getting and having, it’s about giving and being. –Kevin Kruse', 'Life is what happens to you while you’re busy making other plans. –John Lennon', 'We become what we think about. –Earl Nightingale', 'Life is 10% what happens to me and 90% of how I react to it. –Charles Swindoll', 'The most common way people give up their power is by thinking they don’t have any. –Alice Walker', 'The mind is everything. What you think you become.  –Buddha', 'Winning isn’t everything, but wanting to win is. –Vince Lombardi', 'Every child is an artist.  The problem is how to remain an artist once he grows up. –Pablo Picasso', ' You can never cross the ocean until you have the courage to lose sight of the shore. –Christopher Columbus', 'I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel. –Maya Angelou', 'Either you run the day, or the day runs you. –Jim Rohn', 'Whether you think you can or you think you can’t, you’re right. –Henry Ford', 'The two most important days in your life are the day you are born and the day you find out why. –Mark Twain', 'Whatever you can do, or dream you can, begin it.  Boldness has genius, power and magic in it. –Johann Wolfgang von Goethe', 'The best revenge is massive success. –Frank Sinatra', 'People often say that motivation doesn’t last. Well, neither does bathing.  That’s why we recommend it daily. –Zig Ziglar', 'Life shrinks or expands in proportion to one’s courage. –Anais Nin', 'If you hear a voice within you say “you cannot paint,” then by all means paint and that voice will be silenced. –Vincent Van Gogh', 'There is only one way to avoid criticism: do nothing, say nothing, and be nothing. –Aristotle', 'Ask and it will be given to you; search, and you will find; knock and the door will be opened for you. –Jesus', 'The only person you are destined to become is the person you decide to be. –Ralph Waldo Emerson', 'Go confidently in the direction of your dreams.  Live the life you have imagined. –Henry David Thoreau',  'Few things can help an individual more than to place responsibility on him, and to let him know that you trust him.  –Booker T. Washington'];
+    this.days = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado','Domingo'];
+    this.months = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+    this.quotes = ['La gente tarda poco en juzgar, pero mucho en corregirse. - Ezio Auditore', 'No dependas de nadie en este mundo... Porque hasta tu propia sombra te abandona en la oscuridad. -Vergil', 
+      'Es increíble lo que una persona puede llegar a olvidar... pero es más sorprendente lo que puede llegar a esconder. - Tifa Lockhart', 
+      'Únicamente dejando entrar a extraños, podemos encontrar nuevas formas de ser nosotros mismos. - Neku Sakuraba', 
+      'El corazón puede ser débil, pero algunas veces es todo lo que necesitamos. - Sora', 'El hombre adecuado en el sitio equivocado puede cambiar el rumbo del mundo. - G-Man', 
+      'No elegimos como empezamos en esta vida. La verdadera grandeza es que hacemos con lo que nos toca. - Sully', 'Debemos luchar por los que viven y por los que aún no han nacido. - Terra', 
+      'Si de verdad existe el mal en este mundo, éste reside en el mismo corazón del hombre. - Edward D. Morrison', 
+      'Si la historia debe cambiar, que cambie. Si el mundo es destruido, que así sea. Si mi destino es morir, simplemente me reiré de él. - Magus', 'Mientras tengas siempre un espíritu explorador, encontrarás la salida. Esa es mi esperanza. - Héroe',
+      'He luchado mucho tiempo por sobrevivir, pero no importa qué, siempre tienes que encontrar algo por lo que luchar. - Joel', 'Nadie es innecesario. - Yitán', 
+      'No puedes deshacer lo que ya has hecho, pero sí puedes enfrentarlo. - Frank Coleridge', ' No quiero que nadie hable de mi en pasado. - Squall Leonhart', 
+      'Lo correcto... ¿Qué es? Si haces lo correcto... ¿Haces... feliz... a todo el mundo? - Niño lunar', 
+      '¿Qué es el hombre? Una pequeña y miserable pila de secretos. - Drácula', 
+      'Al final, solo lamentamos lo que no hemos hecho. - Taric', 
+      '¿Qué es mejor: nacer siendo bueno o derrotar tu naturaleza malvada con gran esfuerzo? - Paarthurnax',
+      'Que alguien se haya ido no significa que te haya dejado. - James McCloud', 
+      'Leyendas, el primero la cuenta, el segundo la escucha y el tercero la divulga. - Solid Snake', 
+      'Hay una línea muy difusa entre valentía y estupidez. - Juggernaut', 
+      'La vida se trata de determinación. El resultado es secundario. - Waka', 
+      'Incluso en tiempos oscuros, no podemos renunciar a las cosas que nos hacen humanos. - Khan', 
+      'El conocimiento es inútil si no se utiliza. - Steward Gixx', 
+      'No desees que fuera más fácil, desea que fueras mejor. - Zoilo',
+      'El hombre adecuado en el sitio equivocado puede cambiar el rumbo del mundo. -Half-Life 2',
+      'Toda mentira contiene la verdad, y toda verdad contiene una mentira. - Shu'];
     this.apts = [
       {
         name: 'Finish this web app',
@@ -20,7 +41,6 @@ function CalendarApp(date) {
         startTime: new Date(2016, 4, 1, 0),
         day: new Date(2016, 4, 1).toString()
       },
-      
     ];
     
     this.aptDates = [new Date(2016, 4, 30).toString(),new Date(2016, 4, 1).toString()];
@@ -61,7 +81,7 @@ function CalendarApp(date) {
     /* Start the app */
     this.showView(date);
     this.addEventListeners();
-    this.todayIsSpan.textContent = "Today is " + this.months[date.getMonth()] + " " + date.getDate();  
+    this.todayIsSpan.textContent = "Hoy es " + this.months[date.getMonth()] + " " + date.getDate();  
   }
   
   CalendarApp.prototype.addEventListeners = function(){
@@ -91,7 +111,7 @@ function CalendarApp(date) {
     var today = new Date();
     
     var lastDayOfM = new Date(y, m + 1, 0).getDate();
-    var startingD = new Date(y, m, 1).getDay();
+    var startingD = new Date(y, m, 7).getDay();
     var lastM = new Date(y, now.getMonth()-1, 1);
     var nextM = new Date(y, now.getMonth()+1, 1);
    
@@ -172,17 +192,15 @@ function CalendarApp(date) {
     /* Contextual lang changes based on tense. Also show btn for scheduling future events */
     var _dayTopbarText = '';
     if ( day < new Date(now.getFullYear(), now.getMonth(), now.getDate())) {
-      _dayTopbarText = "had ";
       this.addDayEventEle.style.display = "none";
     } else {
-       _dayTopbarText = "have ";
        this.addDayEventEle.style.display = "inline";
     }
     this.addDayEventEle.setAttribute("data-date", day);
     
     var eventsToday = this.showEventsByDay(day);
     if ( !eventsToday ) {
-      _dayTopbarText += "no ";
+      _dayTopbarText += "no hay ";
       var _rand = Math.round(Math.random() * ((this.quotes.length - 1 ) - 0) + 0);
       this.dayInspirationalQuote.textContent = this.quotes[_rand];
     } else {
@@ -197,8 +215,7 @@ function CalendarApp(date) {
     this.dayEventsList.appendChild(this.showEventsCreateElesView(eventsToday));
     
     
-    this.dayEventsEle.textContent = _dayTopbarText + "events on " + this.months[day.getMonth()] + " " + day.getDate() + ", " + day.getFullYear();
-    
+    this.dayEventsEle.textContent = _dayTopbarText + "tareas para " + this.months[day.getMonth()] + " " + day.getDate() + ", " + day.getFullYear();
     
   };
   
@@ -214,7 +231,7 @@ function CalendarApp(date) {
       var li = document.createElement("li");
       li.className = "event-dates";
       // li.innerHtml
-      var html = "<span class='start-time'>" + _start.toLocaleTimeString(navigator.language,{hour: '2-digit', minute:'2-digit'}) + "</span> <small>through</small> ";
+      var html = "<span class='start-time'>" + _start.toLocaleTimeString(navigator.language,{hour: '2-digit', minute:'2-digit'}) + "</span> <small>hasta las</small> ";
       html += "<span class='end-time'>" + _end.toLocaleTimeString(navigator.language,{hour: '2-digit', minute:'2-digit'}) + ( (_end.getDate() != _start.getDate()) ? ' <small>on ' + _end.toLocaleDateString() + "</small>" : '') +"</span>";
       
   
@@ -225,7 +242,7 @@ function CalendarApp(date) {
       div.innerHTML = html;
       
       var deleteBtn = document.createElement("span");
-      var deleteText = document.createTextNode("delete");
+      var deleteText = document.createTextNode("eliminar");
       deleteBtn.className = "event-delete";
       deleteBtn.setAttribute("data-idx", idx);
       deleteBtn.appendChild(deleteText);
@@ -494,5 +511,3 @@ function CalendarApp(date) {
   
   var calendar = new CalendarApp();
   console.log(calendar);
-  
-  

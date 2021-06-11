@@ -16,9 +16,9 @@ body{
   background: radial-gradient(ellipse at center, rgba(76,76,76,1) 0%, rgba(43,43,43,1) 0%, rgba(23,23,23,1) 91%, rgba(23,23,23,1) 100%);
   }
   .calendar{
-    color: #fff;
+    color: black;
     margin: 10px auto;
-    background: #04b6e2;
+    background: #fbc02d;
     padding: 60px 40px 80px 40px;
     width: 95%;
     max-width: 600px;
@@ -38,7 +38,7 @@ body{
     width: 100%;
     height: 100%;
     background: rgba(255,255,255,1);
-   box-shadow: 3px 12px 5px rgba(2,2,2,0.16);
+    box-shadow: 3px 12px 5px rgba(0, 0, 0, 0.16);
     z-index: 2;
     overflow: hidden;
     transform: scale(0.9) translate(30px,30px);
@@ -89,7 +89,7 @@ body{
   }
   
   .day-add-event{
-    background: #04b6e2;
+    background: #fbc02d;
     color: #fff;
     padding: 16px;
     display: none;
@@ -102,12 +102,13 @@ body{
   }
   .add-event-label{
     padding: 10px 0;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Avenir', sans-serif;
     color: #fff;
     font-weight: 400;
     font-size: 12px;
-    color: rgba(255,255,255,0.8);
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 880;
   }
   .add-event-edit{
     display: block;
@@ -124,13 +125,13 @@ body{
   
   input.add-event-edit{
     border: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid rgb(0, 0, 0);
     background: transparent;
     outline: none;
     font: inherit;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 18px;
-    font-weight: 800;
+    font-weight: normal;
   }
   .add-event-edit--error, input.add-event-edit--error{
     border-color: #ff5151;
@@ -145,19 +146,19 @@ body{
     }
   }
   input.add-event-edit::-webkit-input-placeholder {
-     color: #fff;
+     color: rgb(0, 0, 0);
   }
   
   input.add-event-edit:-moz-placeholder { /* Firefox 18- */
-     color: #fff;  
+     color: rgb(0, 0, 0);  
   }
   
   input.add-event-edit::-moz-placeholder {  /* Firefox 19+ */
-     color: #fff;  
+     color: rgb(0, 0, 0);  
   }
   
   input.add-event-edit:-ms-input-placeholder {  
-     color: #fff;  
+     color: rgb(0, 0, 0);  
   }
   .event-btn{
     padding: 3px 8px;
@@ -322,11 +323,11 @@ body{
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    color: #222;
+    color: white;
   }
   .cview__month-last:hover,.cview__month-next:hover{
-    color: #fff;
-  }
+    color: black;
+  } 
   
   .cview__month-current{
     font-size: 22px;
@@ -374,14 +375,14 @@ body{
     
   }
   .cview--date:hover::before{
-    background: rgba(255,255,255,0.2);
+    background: rgba(172, 172, 172, 0.212);
   }
   .cview--date.today{
-    color: #111;  
+    color: white;  
   }
   .cview--date.today::before{
     animation: popIn 200ms 1 forwards;
-    background: rgba(255,255,255,0.2);
+    background: rgba(160, 159, 159, 0.212);
     transform: scale(0);
   }
   @keyframes popIn{
