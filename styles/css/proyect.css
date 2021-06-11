@@ -323,10 +323,10 @@ body{
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    color: white;
+    color: #222;
   }
   .cview__month-last:hover,.cview__month-next:hover{
-    color: black;
+    color: #fff;
   } 
   
   .cview__month-current{
@@ -378,7 +378,8 @@ body{
     background: rgba(172, 172, 172, 0.212);
   }
   .cview--date.today{
-    color: white;  
+    color: black;
+    font-weight: bold;  
   }
   .cview--date.today::before{
     animation: popIn 200ms 1 forwards;
@@ -413,6 +414,36 @@ body{
   .footer__link{
     cursor: pointer;
     padding: 2px 5px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid rgb(0, 0, 0);
   }
   
+.enlaceboton {    
+  font-family: Roboto, Arial, sans-serif;
+  width: 150px;
+  font-size: 11pt;
+  font-weight: bold;
+  padding: 4px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-style: solid;
+  border-radius: 5px;
+}
+.enlaceboton:link,
+.enlaceboton:visited {
+  border-top: 1px solid #cccccc;
+  border-bottom: 2px solid #666666;
+  border-left: 1px solid #cccccc;
+  border-right: 2px solid #666666;
+}
+.enlaceboton:hover {
+  border-bottom: 1px solid #cccccc;
+  border-top: 2px solid #666666;
+  border-right: 1px solid #cccccc;
+  border-left: 2px solid #666666;
+}
+
+#returnToIndex {
+  position: static;
+  margin-bottom: 5%;
+}
