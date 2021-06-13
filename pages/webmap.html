@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link href="../styles/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--Import jQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--Import style.css-->
+    <link href="../styles/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Componentes</title>
+  </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+  <body>
+    <header>
+      <div id="banner">
+        <div id="logo">
+          <a href="./index.html"><img class="logo" alt="logo esitapp" src="../models/image/logo.png" tabindex="1"></a>
+      </div>
+        </div>
+        <nav>
+          <div class="nav-wrapper"> 
+            <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="left hide-on-med-and-down ">
+              <li><a href="./index.html" class="nav-bar" tabindex="2"><strong>Inicio</strong></a></li>
+              <li><a href="./proyect.html" class="nav-bar" tabindex="3"><strong>Nuestro proyecto</strong></a></li>
+              <li class="active"><a href="./componentes.html" class="nav-bar" tabindex="4"><strong>Componentes</strong></a></li>
+              <li><a href="./accessibility.html" class="nav-bar" tabindex="5"><strong>Accesibilidad</strong></a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down ">
+              <li>
+                <form method="get" action="https://www.google.com/search" target="_blank">
+                  <label for="search">      </label>
+                    <input type="search" id="search" name="q" placeholder="Buscar..." tabindex="8" autofocus required>
+                </form>
+              </li>
+              <li><a href="./login.html" class="nav-bar" tabindex="6"><strong>Iniciar sesión</strong></a></li>
+              <li><a href="./register.html" class="nav-bar" tabindex="7"><strong>Regístrate</strong></a></li>
+            </ul>
+          </div>
+        </nav>
+        <ul class="sidenav" id="mobile-nav">
+          <li>
+            <form method="get" action="https://www.google.com/search" target="_blank">
+              <label class="search-label" for="search-mobile">‎      </label>
+              <input id="search" type="search" name="q" placeholder="Buscar..." autofocus required>
+            </form>
+          </li>
+          <li><a href="./index.html" class="nav-bar"><strong>Inicio</strong></a></li>
+          <li><a href="./proyect.html" class="nav-bar"><strong>Nuestro proyecto</strong></a></li>
+          <li class="active"><a href="./componentes.html" class="nav-bar"><strong>Componentes</strong></a></li>
+          <li><a href="./accessibility.html" class="nav-bar"><strong>Accesibilidad</strong></a></li>
+          <li><a href="./login.html" class="nav-bar"><strong>Iniciar sesión</strong></a></li>
+          <li><a href="./register.html" class="nav-bar"><strong>Regístrate</strong></a></li>
+        </ul>
+  </header>
+  <ul class="breadcrumb">
+    <li><a href="./index.html" tabindex="9">Inicio</a></li>
+    <li><a href="./webmap.html" tabindex="10">Mapa Web</a></li>
+  </ul>
+  <div>
+      <ul>
+          <li><a href="./index.html" tabindex="11">Inicio</a></li>
+          <ul>  
+            <li><a href="./index/techniques.html" tabindex="12">Ayuda a organizarte</a></li>
+            <li><a href="./index/timeopt.html" tabindex="13">Optimiza tu tiempo</a></li>
+            <li><a href="./index/feedback.html" tabindex="14">Comparte tus estadísticas</a></li>
+          </ul>
+          <li><a href="./proyect.html" tabindex="15">Nuestro Proyecto</a></li>
+          <li><a href="./componentes.html" tabindex="16">Componentes</li>
+          <li><a href="./accessibility.html=" tabindex="17">Accesibilidad</li>
+          <li><a href="./login.html" tabindex="18">Inicio de Sesión</li>
+          <li><a href="./register.html" tabindex="19">Regístrate</a></li>
+      </ul>
+  </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="black-text">Contacta con nosotros</h5>
+            <p class="black-text text-lighten-4">Si tienes alguna cuestión en la que podamos ayudarte a resolver no dudes<br>en ponerte en contacto con nosotros.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="black-text">Emails y teléfonos:</h5>
+            <ul>
+              <li id="blackli">Número de atención al cliente: (+34)677234567</li>
+              <li id="blackli">Email de contacto clientes: help.client@esitapp.es</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+            © 2021 Copyright EsitAPP
+            <a class="black-text text-lighten-4 right" href="./webmap.html" tabindex="20">Mapa Web</a>
+            <a class="black-text text-lighten-4 right" href="./accessibility.html" tabindex="21">Accesibilidad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+      </div>
+    </footer>     
+</body>
+</html>
