@@ -378,3 +378,6 @@ h6 {
   font-weight: bold;
 }
 
+#webmaplist {
+  list-style-type: disc;
+}
